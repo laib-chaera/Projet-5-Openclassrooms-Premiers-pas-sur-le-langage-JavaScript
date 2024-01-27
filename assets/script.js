@@ -31,14 +31,7 @@ const tagLine= document.querySelector("#banner p");
 
  // index du diapositive actuellement affiché
 let index = 0;
-console.log(index);
 
-//vérification du bon fonctionnement
-console.log(arrowLeft);
-console.log(arrowRight);
-console.log(dotsContainer);
-console.log(img);
-console.log(tagLine);
 
 //Cette fonction crée des points indicateurs pour chaque diapositive.
 function ajoutDot(){
@@ -48,6 +41,7 @@ function ajoutDot(){
     dot.classList.add("dot"); 
 	dotsContainer.appendChild(dot);
 
+	
 		if (i==index) {
 			dot.classList.add("dot_selected") 
 		} 
